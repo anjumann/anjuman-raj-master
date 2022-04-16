@@ -1,0 +1,117 @@
+body {
+  background: #e5ddd5
+    url("https://www.toptal.com/designers/subtlepatterns/patterns/sports.png")
+    fixed;
+}
+
+.msg-container {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 250px;
+  width: 350px;
+  color: black;
+  background: white;
+  margin: auto;
+  border-radius: 10px;
+  opacity: 1;
+  padding: 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE 10+ */
+}
+.msg-container::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+  /* make scrollbar transparent */
+}
+@media screen and (min-width: 1200px) {
+  .msg-container {
+    width: 30vw;
+    height: 40vw;
+    padding: 1.58vw;
+  }
+}
+.msg-container .msg {
+  font-size: 0.8rem;
+  padding: 12px;
+  border-radius: 15px;
+  max-width: 75%;
+  display: none;
+  top: 100%;
+  margin-bottom: 15px;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  transform: scale(1);
+}
+.msg-container .msg.hidden {
+  opacity: 0;
+  transform: scale(0.8);
+}
+.msg-container .msg.received {
+  background: #f4f4f4;
+  align-self: flex-start;
+  color: #5f5f5f;
+}
+.msg-container .msg.sent {
+  background: #2e68ff;
+  color: white;
+  align-self: flex-end;
+}
+.msg-container .msg:nth-child(1) {
+  margin-top: auto;
+}
+@media screen and (min-width: 1200px) {
+  .msg-container .msg {
+    font-size: 1.265vw;
+    padding: 1vw;
+  }
+}
+.msg-container.animated .msg.msg-receive {
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+.msg-container.animated .msg.msg-send {
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+
+.tooltipMsg,
+.restartConvo {
+  padding: 10px 30px;
+  display: inline-block;
+  margin-right: 5px;
+}
+/*buttons*/
+.action-button {
+  width: 100px;
+  background: blue;
+  font-weight: bold;
+  color: white;
+  border: 0 none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 5px;
+}
+.action-button:hover,
+.action-button:focus {
+  box-shadow: 0 0 0 2px white, 0 0 0 3px #27ae60;
+  background: #2e68ff;
+}
+.container {
+  border-radius: 5px;
+  width: 400px;
+  margin: auto;
+  text-align: center;
+  position: relative;
+}

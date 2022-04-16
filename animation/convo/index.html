@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Message Cover</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="msg-container">
+  <div class="msg hidden msg-0 received">
+      Hi Ayush! 👋🏻
+  </div>
+  <div class="msg hidden msg-1 sent">
+      Hello!
+  </div>
+  <div class="msg hidden msg-2 received">
+     I heard you’re working on something really cool?
+  </div>
+  <div class="msg hidden msg-3 sent">
+     Yeah, I’ve been developing an App 🔥
+  </div>
+  <div class="msg hidden msg-4 sent">
+      DYING for people to see it 👀
+  </div>
+  <div class="msg hidden msg-5 received">
+      That sounds fun!
+  </div>
+  <div class="msg hidden msg-6 sent">
+     Yeah, just wait to see the lookbook we’re developing for them! It’s pretty neat!! 
+  </div>
+  <div class="msg hidden msg-7 sent">
+     And stay tuned because we’re gonna be doing some AMAZING collabs with them! 
+  </div>
+  <div class="msg hidden msg-8 received">
+     Ooo can’t wait to see 😍
+  </div>
+</div>
+<div class="container">
+<input type="button" name="next" class="next action-button tooltipMsg" value="Start Convo"  data-tooln="{{loop.index}}"/>
+<input type="button" name="next" class="next action-button restartConvo" value="Stop Convo"  data-tooln="{{loop.index}}"/>
+</br>
+<a href="../index.html"><input type="button" class=" action-button" value="Home" /></a>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
